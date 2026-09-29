@@ -61,15 +61,13 @@ docker run --rm -it \
 
 ## GitHub Container Registry
 
-`main` ブランチへの push で GitHub Actions がイメージをビルドし、GitHub Container Registry (GHCR) に公開します。
+本リポジトリのイメージは、GitHub Container Registry (GHCR) で公開しています。
 
 イメージ名:
 
 ```text
 ghcr.io/ceekz/ydev-alma95:latest
 ```
-
-最初に作成された GHCR package は private の場合があります。TUT HPC から認証なしで取得する場合は、GitHub の package settings で package visibility を `Public` に変更してください。
 
 ## Singularity / TUT HPC
 
@@ -110,7 +108,7 @@ AlmaLinux 9.5 のパッケージを再現可能にするため、パッケージ
 
 ## References
 
-- TUT HPC Cluster System Specification  
+- クラスタシステム構成 - TUT HPC Cluster Wiki  
   https://hpcportal.imc.tut.ac.jp/wiki/ClusterSystemSpec
-- Running container images on TUT HPC  
+- Singularityイメージファイルの入手 - TUT HPC Cluster Wiki  
   https://hpcportal.imc.tut.ac.jp/wiki/HowToRunNGCContainer
